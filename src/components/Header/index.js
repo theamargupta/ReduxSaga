@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Header = () => {
-  return <div>Header</div>;
-};
+import './index.scss';
+
+const Header = () => <header>What the Splash!</header>;
 
 export default Header;
