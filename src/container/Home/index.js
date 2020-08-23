@@ -18,16 +18,8 @@ const Home = () => {
     }),
     shallowEqual
   );
-  const handleScroll = (event) => {
-    console.log();
-    const { scrollTop, clientHeight, scrollHeight } = event.currentTarget;
-    console.log('scrollTop :', scrollTop);
-    console.log('clientHeight :', clientHeight);
-    console.log('scrollHeight :', scrollHeight);
-  };
   return (
-    <Content onScroll={handleScroll}>
-      {/* <div className='content'> */}
+    <Content>
         <section className='grid'>
           {images.map((image) => (
             <div
@@ -45,7 +37,6 @@ const Home = () => {
         >
           Load More
         </Button>
-      {/* </div> */}
     </Content>
   );
 };
